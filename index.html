@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comision 31855 React</title>
+    <style>
+        picture {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100px;
+        margin-bottom: 10px;
+        }
+        img {
+            border-radius: 50%;
+            box-shadow: 0 0 15px #555;
+            margin-bottom: 10px;
+        }
+        .disabled {
+            opacity: 0.5
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Bienvenido al curso de ReactJS comision 31855</h1>
+    <p>parrafo</p>
+    <!-- <picture class="picture">
+        <img src="https://randomuser.me/api/portraits/lego/5.jpg" alt="lego"/>
+        <p>lego</p>
+    </picture> -->
+
+    <div id="root"></div>
+
+    <script>
+        const app = document.getElementById('root')
+        console.log(app)
+
+        const Avatar = (params) => {
+            console.log(params)
+            return `
+                <picture>
+                    <img src="https://randomuser.me/api/portraits/lego/${params.id}.jpg" alt="lego"/>
+                    <p>${params.name}</p>
+                </picture>
+            `
+        }
+
+        app.innerHTML = Avatar({ id: 1, name: 'Lego 1'})
+        app.innerHTML += Avatar({ id: 2, name: 'Lego 2'})
+
+        document.querySelectorAll("img").forEach((img) => {
+            img.addEventListener('click', () => {
+                img.classList.toggle('disabled')
+            })
+        })
+    </script>
+  </body>
+</html>
