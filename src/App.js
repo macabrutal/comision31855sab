@@ -1,25 +1,22 @@
 // import logo from './logo.svg';
 // import './App.css';
-import Avatar from './components/Avatar/Avatar'
+
+import Navbar from './components/Navbar/Navbar'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+//import FunctionCounter  from './components/ItemCount/ItemCount'
+//import {useState} from 'react'
 
 
 
 function App() {
+//const [show, setShow] = useState(true)
+
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" />
-
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Comision 31855
-        </a> */}
-      </header>
-      <Avatar />
+     <Navbar/>
+     <h2>Las ofertas de la semana</h2>
+     {/* <ItemListContainer geeting = "Hola Coders!"/> */}
+     {/* <ItemCount initial = {1} stock={20} onAdd={onAdd}/> */}
     </div>
   );
 }
