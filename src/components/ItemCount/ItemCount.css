@@ -1,0 +1,33 @@
+.contenedor-count{
+    display: flex;
+    width: 200px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bot-count{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px; 
+}
+
+.number{
+    width: 30px;
+    height: 40px;
+    color: #01a3a4;
+   font-weight: bold;
+   text-align: center;
+   padding-top: 15px;
+}
+
+.bot-agregar{
+    width: 140px;
+    height: 40px; 
+    border-radius: 3px; 
+    margin-left: 3px;
+}
+
+.bot-agregar:hover{
+   background-color: #01a3a4
+}
