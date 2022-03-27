@@ -1,10 +1,10 @@
 
 import React from "react"
 import {getProducts } from "../../asyncmock" //traigo los productos desde asyncmock
-import { useEffect, useState } from "react"
-import ItemList from '../ItemList/ItemList'
+import { useState, useEffect } from 'react'
+// import ItemList from '../ItemList/ItemList'
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([])
 
     useEffect(()=> {
@@ -18,9 +18,10 @@ const ItemListContainer = ({greeting}) => {
         <div>
             <h1> {greeting} </h1>
             <ul>
-            {products.map(product => (product => <li> {product.name}</li>))}
+            {products.map(product => 
+            <li key={product.id}>{product.nombre}</li> )}
             </ul>
-            <ItemList prducts = {products}/>
+            {/* <ItemList prducts = {products}/> */}
        </div>
 
 
