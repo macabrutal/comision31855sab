@@ -16,7 +16,7 @@ const products = [
         "nombre": " Cuadro Ballena",
         "medidas": "23 x 18 cms.",
         "precio": 18000,
-        "img": "11.png",
+        img: "11.png",
         stock: 25, 
         category: 'cuadro pequeño'
     },
@@ -25,7 +25,7 @@ const products = [
         "nombre": " Cuadro Corona",
         "medidas": "23 x 18 cms.",
         "precio": 18000,
-        "img": "10.png",
+        img: "10.png",
         stock: 45, 
         category: 'cuadro pequeño'
     },
@@ -33,7 +33,7 @@ const products = [
         "nombre": " Cuadro Oso",
         "medidas": "23 x 18 cms.",
         "precio": 18000,
-        "img": "12.png",
+        img: "12.png",
         stock: 50, 
         category: 'cuadro pequeño'
     }
