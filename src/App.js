@@ -12,16 +12,17 @@ import {useState} from 'react'
 function App() {
 //const [show, setShow] = useState(true)
 
-//función que va contando
-const onAdd = (quantity) => {
-  console.log(quantity)
-}
+// //función que va contando
+// const onAdd = (quantity) => {
+//   console.log(quantity)
+// }
+
   return (
     <div className="App">
       <Navbar/>
       <div className='contenedor'>
         <ItemListContainer greeting = "¡Bienvenidos!"/>
-        <ItemCount initial={1} stock={20} onAdd={onAdd}/>
+        {/* <ItemCount initial={1} stock={20} onAdd={onAdd}/> */}
       </div>
     </div>
   );
