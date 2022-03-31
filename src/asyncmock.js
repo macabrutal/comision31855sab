@@ -1,14 +1,6 @@
 
 const products = [
-    // { 
-    //     id: 1, 
-    //     name: 'iphone 12', 
-    //     price: 1000, 
-    //     category: 'celular', 
-    //     img:'https://www.apple.com/newsroom/images/product/iphone/standard/Apple_announce-iphone12pro_10132020.jpg.og.jpg?202108061040', 
-    //     stock: 25, 
-    //     description:'Descripcion de Iphone 12'
-    // },
+  
     {
         id:1,
         nombre: "Cuadro Niña de mis ojos",

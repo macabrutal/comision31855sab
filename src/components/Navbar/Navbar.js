@@ -1,6 +1,5 @@
 import React from "react";
 import "./Navbar.css";
-import logo_dark from "../../img/logo_dark.png";
 import CartWidget from "../CartWidget/CartWidget"
 
 const Navbar = () =>{
@@ -15,7 +14,7 @@ const Navbar = () =>{
 // <CartWidget/>
 //         </nav>
 
-<nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav className="navbar navbar-expand-lg navbar-dark nav">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">Maca y su arte</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">

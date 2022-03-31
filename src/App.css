@@ -44,3 +44,9 @@ body {
   background-color: white;
   transition: background-color 700ms ease;
 }
+
+.btn-primary {
+  color: #fff;
+  background-color: #EAB543 impotant!; 
+  border-color: #EAB543 impotant!;
+}

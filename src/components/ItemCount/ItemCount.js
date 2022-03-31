@@ -1,6 +1,7 @@
 import { useState} from "react"
 
 import './ItemCount.css';
+import { button  } from 'react-bootstrap'
 
 
 const ItemCount = ({ initial = 0, stock, onAdd})=> {
@@ -30,10 +31,10 @@ const increment = () => {
 
     return(
 <div className="contenedor-count">
-    <button onClick={decrement} className="bot-count btn btn-outline-primary"> - </button>
+    <button onClick={decrement} className="bot-count btn btn-outline-secondary"> - </button>
     <p className="number"> {count} </p>
-    <button onClick={increment} className="bot-count btn btn-outline-primary"> + </button>
-    <button className="bot-agregar btn btn-primary" onClick ={() => onAdd(count)}> AGREGAR</button>
+    <button onClick={increment} className="bot-count btn btn-outline-secondary"> + </button>
+    <button className="bot-agregar btn btn-secondary" onClick ={() => onAdd(count)}> AGREGAR</button>
 </div>
     )
 }

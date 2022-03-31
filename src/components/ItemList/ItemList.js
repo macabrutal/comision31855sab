@@ -1,20 +1,28 @@
 import React from 'react'
+import Item from '../Item/Item'
 
-const ItemList = () => {
 
+const ItemList = ({products}) => {
+
+    const productos = [
+      {
+        id:1,
+        nombre: "Cuadro",
+        medidas: "24 x 29 cms.",
+        precio: 30000,
+        img: "46.png",
+        stock: 15, 
+        category: 'cuadro grande'
+      }
+    ]
+
+
+    return(
+      productos.map((product) => {
+        return <Item
+                id={product.id} nombre={product.nombre} medidas={product.medidas} precio={product.precio}  img={product.img}  stock={product.stock}  category={product.category}  />
+      })
+    )
 }
-
-return(
-    <div className="card border-primary mb-3" id="producto${indice}" style="max-width: 20rem; margin:8px">
-    <img src="" class="card-img-top" alt="producto">
-    <div className="card-body">
-        <h4 className="card-title">Cuadro </h4>
-        <p className="card-text">Medidas: </p>
-        <p className="card-pice">$</p>
-        <button className="btn btn-primary "> AGREGAR AL CARRO </button>
-    </div>
-</div>
-)
-
 
 export default ItemList

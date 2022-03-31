@@ -10,6 +10,7 @@
     width: 40px;
     height: 40px;
     border-radius: 3px; 
+    border: 1 solid #01a3a4;
 }
 
 .number{
@@ -26,8 +27,13 @@
     height: 40px; 
     border-radius: 3px; 
     margin-left: 3px;
+    background-color: #719191;
 }
 
 .bot-agregar:hover{
-   background-color: #01a3a4
+   background-color: #3D5051
+}
+
+.btn-outline-primary{
+color: #01a3a4;;
 }
