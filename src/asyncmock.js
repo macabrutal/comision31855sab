@@ -3,7 +3,7 @@ const products = [
   
     {
         id:1,
-        nombre: "Cuadro Niña de mis ojos",
+        nombre: "Niña de mis ojos",
         medidas: "24 x 29 cms.",
         precio: 30000,
         img: "46.png",
@@ -13,7 +13,7 @@ const products = [
 
     {
         id:2,
-        "nombre": " Cuadro Ballena",
+        "nombre": " Ballena",
         "medidas": "23 x 18 cms.",
         "precio": 18000,
         img: "11.png",
@@ -22,7 +22,7 @@ const products = [
     },
     {
         id:3,
-        "nombre": " Cuadro Corona",
+        "nombre": " Corona",
         "medidas": "23 x 18 cms.",
         "precio": 18000,
         img: "10.png",
@@ -30,7 +30,7 @@ const products = [
         category: 'cuadro pequeño'
     },
         {id:4,
-        "nombre": " Cuadro Oso",
+        "nombre": " Oso",
         "medidas": "23 x 18 cms.",
         "precio": 18000,
         img: "12.png",
@@ -44,8 +44,17 @@ export const getProducts = () => {
     return new Promise ((resolve, reject) => {
 setTimeout(() => {
     resolve(products)
-}, 2000);
+}, 1000);
     })
 }
 
-export default products 
+// export default products 
+
+export const getProductById = (id) =>{
+    return new Promise((resolve) => {
+        setTimeout(()=>{
+            resolve(products.find(prod => prod.id === parseInt(id)))
+        }, 1000)
+    })
+}
+

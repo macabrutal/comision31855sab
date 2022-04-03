@@ -1,0 +1,15 @@
+.footer-detail{
+    justify-content: center;
+    margin-top: 10px;
+    color: cadetblue;
+}
+
+.footer-detail a{
+    color: cadetblue;
+    font-weight: bold;
+}
+.Info {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+}

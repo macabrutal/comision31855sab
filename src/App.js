@@ -3,9 +3,13 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navbar from './components/Navbar/Navbar';
-import ItemCount from './components/ItemCount/ItemCount';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+// import ItemCount from './components/ItemCount/ItemCount';
+
 import {useState} from 'react'
+
 
 
 
@@ -19,11 +23,18 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar/>
-      <div className='contenedor'>
-        <ItemListContainer greeting = "¡Bienvenidos!"/>
-        {/* <ItemCount initial={1} stock={20} onAdd={onAdd}/> */}
-      </div>
+      <BrowserRouter>
+          <Navbar/>
+          <div className='contenedor'>
+            {/* <ItemListContainer greeting = "¡Bienvenidos!"/> */}
+                <Routes>
+                  <Route path='/' element={<ItemListContainer greeting={'¡Bienvenidos!'}/>}/>
+                  <Route path='/category/:categoryId' element={<ItemListContainer greeting={'Hola Coder'}/>} />
+                  <Route path='/detail/:productId' element={<ItemDetailContainer />} />
+                </Routes>
+            {/* <ItemCount initial={1} stock={20} onAdd={onAdd}/> */}
+          </div>
+      </BrowserRouter>
     </div>
   );
 }

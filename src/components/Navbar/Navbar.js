@@ -4,15 +4,7 @@ import CartWidget from "../CartWidget/CartWidget"
 
 const Navbar = () =>{
     return(
-//         <nav>
-//             <img src={logo_dark} alt ="logo"></img>
-// <ul>
-//     <li>Nosotros</li>
-//     <li>Proyectos</li>
-//     <li>Contacto</li>
-// </ul>
-// <CartWidget/>
-//         </nav>
+//
 
 <nav className="navbar navbar-expand-lg navbar-dark nav">
   <div className="container-fluid">
@@ -42,8 +34,7 @@ const Navbar = () =>{
       </ul>
      
       <form className="d-flex">
-        {/* <input className="form-control me-sm-2" type="text" placeholder="Search"> */}
-        {/* <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button> */}
+       
       </form>
     </div>
   </div>
