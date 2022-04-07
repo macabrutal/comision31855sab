@@ -7,3 +7,19 @@
 .nav{
   background-color: #719191;
 }
+
+.logo{
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  display: block;
+  margin: 0.4rem 8rem 0 6rem;
+  text-decoration: none;
+}
+
+.logo a{
+  text-decoration: none;
+  
+}

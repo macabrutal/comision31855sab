@@ -12,7 +12,6 @@ import {useState} from 'react'
 
 
 
-
 function App() {
 //const [show, setShow] = useState(true)
 
@@ -29,7 +28,7 @@ function App() {
             {/* <ItemListContainer greeting = "¡Bienvenidos!"/> */}
                 <Routes>
                   <Route path='/' element={<ItemListContainer greeting={'¡Bienvenidos!'}/>}/>
-                  <Route path='/category/:categoryId' element={<ItemListContainer greeting={'Hola Coder'}/>} />
+                  <Route path='/category/:categoryId' element={<ItemListContainer greeting={'¡Bienvenidos!'}/>} />
                   <Route path='/detail/:productId' element={<ItemDetailContainer />} />
                 </Routes>
             {/* <ItemCount initial={1} stock={20} onAdd={onAdd}/> */}

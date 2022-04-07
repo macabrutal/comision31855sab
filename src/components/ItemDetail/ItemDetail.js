@@ -10,9 +10,9 @@ const ItemDetail = ({ id, nombre, img, category, description, precio, stock, med
               <Card.Title>Cuadro {nombre} </Card.Title>
               <Card.Text> sku:{id} </Card.Text>
               <Card.Text> Categoría: {category} </Card.Text>
-              <p className="Info">
+              <Card.Text >
                     Descripción: {description}
-                </p>
+                </Card.Text>
               <Card.Text>  Medidas: {medidas} </Card.Text>
               <Card.Text>${precio} </Card.Text>
               <Card.Text> stock: {stock} unidades</Card.Text>

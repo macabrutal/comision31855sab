@@ -14,7 +14,7 @@ const onAdd = (quantity) => {
 
 return(
   <Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src={"../img/"+img} />
+    <Card.Img variant="top" src={"../img/"+img} alt={nombre}/>
       <Card.Body>
         <Card.Title>Cuadro {nombre} </Card.Title>
         <Card.Text> sku:{id} </Card.Text>
@@ -22,10 +22,10 @@ return(
         <Card.Text>  Medidas: {medidas} </Card.Text>
         <Card.Text>${precio} </Card.Text>
         <Card.Text> stock: {stock} unidades</Card.Text>
-        <Button variant="secondary">Ver más</Button>
+        {/* <Button variant="secondary">Ver más</Button> */}
         <ItemCount initial={1} stock={20} onAdd={onAdd}/>
-        <footer className='footer-detail'>
-                <Link to={`/detail/${id}`} className='Option'>Ver detalle</Link>
+        <footer className='footer-detail secondary' variant="secondary">
+                <Link to={`/detail/${id}`} className='Option'>VER DETALLE</Link>
             </footer>
       </Card.Body>
   </Card>

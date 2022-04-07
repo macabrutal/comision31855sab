@@ -8,10 +8,10 @@ const ItemDetailContainer = () => {
     const [product, setProduct] = useState()
     const [loading, setLoading] = useState(true)
 
-    const { productId } = useParams()
+    const { productId } = useParams() //productId lo traigo de App.js (Route)
 
     useEffect(() => {
-        setLoading(true)
+        setLoading(true) //arranco la carga
 
         getProductById(productId).then(prod => {
             setProduct(prod)
@@ -28,7 +28,7 @@ const ItemDetailContainer = () => {
     }
     
     return (
-        <div>
+        <div className='ItemDetailContainer '>
            <ItemDetail {...product}/>
         </div>
     )
