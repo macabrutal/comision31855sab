@@ -4,12 +4,15 @@
     justify-content: center;
     align-content: center;
     align-items: center;
+    text-align: center;
     margin: 0 auto;
     color: #fff;
     font-weight: bold;
     background-color: #C4B68D;
     border-radius: 3px;
     padding: 10px 80px;
+    border: none;
+
 }
 
 .footer-detail a{

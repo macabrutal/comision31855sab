@@ -1,0 +1,26 @@
+.CartWidget {
+    width: auto;
+    padding-right: 70px;
+    font-size: 16px;
+    font-weight: bolder;
+    flex: none;
+    display: flex;
+    order: 1;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    outline: inherit;
+    color: #fff;
+}
+.CartWidget a{
+    color: #fff;
+}
+
+a.CartWidget{
+    color: #fff;
+}
+
+.CartWidget a:hover{
+    color: #C4B58D;
+}
