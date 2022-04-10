@@ -22,10 +22,9 @@ return(
         <Card.Text>  Medidas: {medidas} </Card.Text>
         <Card.Text>${precio} </Card.Text>
         <Card.Text> stock: {stock} unidades</Card.Text>
-        {/* <Button variant="secondary">Ver más</Button> */}
-        <ItemCount initial={1} stock={20} onAdd={onAdd}/>
+        {/* <ItemCount initial={1} stock={20} onAdd={onAdd}/> */}
         <footer className='footer-detail secondary' variant="secondary">
-                <Link to={`/detail/${id}`} className='Option'>VER DETALLE</Link>
+                <Link to={`/detail/${id}`} >VER DETALLE</Link>
             </footer>
       </Card.Body>
   </Card>

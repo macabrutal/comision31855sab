@@ -20,6 +20,20 @@
 }
 
 .logo a{
+  text-decoration: none !important;
+  color: #fff;
+}
+
+.logo:hover{
+  color: #3D5051 !important;
   text-decoration: none;
-  
+}
+
+a{
+  text-decoration: none !important;
+}
+
+a:hover{
+  text-decoration: none !important;
+  color: #3D5051;
 }

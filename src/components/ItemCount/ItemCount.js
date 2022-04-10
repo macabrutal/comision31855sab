@@ -4,9 +4,9 @@ import './ItemCount.css';
 import { button  } from 'react-bootstrap'
 
 
-const ItemCount = ({ initial = 0, stock, onAdd})=> {
+const ItemCount = ({onAdd})=> {
 //useState
-const [count, setCount] = useState(initial)
+const [count, setCount] = useState(0)
 // const [title, setTitle] = useState('Titulo inicial')
 
 const decrement = () => {
@@ -14,20 +14,8 @@ const decrement = () => {
 }
 
 const increment = () => {
-    if(count < stock){
-        setCount(count + 1)
-    }
+    setCount(count + 1)
 }
-
-//useEffect (escucha los cambio de estados)
-// useEffect(()=>{
-
-//     return (()=> {
-//         console.log('se va a desmontar')
-//         setCount()
-//     })
-// }, [count])
-
 
     return(
 <div className="contenedor-count">
