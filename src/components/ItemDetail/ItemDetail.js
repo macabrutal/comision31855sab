@@ -2,9 +2,8 @@ import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
 import { Card} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import { useState, useContext, createContext } from 'react' 
+import { useState, useContext } from 'react' 
 import CartContext from '../../context/CartContext'
-// import {CartContext } from '../../App'
 
 const ItemDetail = ({ id, nombre, img, category, description, precio, stock, medidas}) => {
   const [quantity, setQuantity] = useState(0)
@@ -14,9 +13,8 @@ const ItemDetail = ({ id, nombre, img, category, description, precio, stock, med
 const {addItem} = useContext(CartContext)
 
   const handleOnAdd = (count) => {
-      console.log('agregue al carrito')
+      console.log('agregue productos al carrito')
       setQuantity(count)
-      
      
       addItem({ id, nombre, precio }, count)
   }

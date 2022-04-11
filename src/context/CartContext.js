@@ -4,6 +4,7 @@ const Context = createContext()
 
 export const CartContextProvider = ({children}) => {
 const [cart, setCart] = useState([])
+console.log(cart)
 
 //AGREGAR productos al carrito
 const addItem = (product, quantity) => {
@@ -13,7 +14,6 @@ const addItem = (product, quantity) => {
     }
 
     setCart([...cart, objItemCart])
-
 }
 
 //ELIMINAR todos los productos del carrito
