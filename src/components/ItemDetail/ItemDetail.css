@@ -3,6 +3,7 @@
     justify-content: center;
     align-content: center;
     margin: 0 auto;
+    padding: 10px;
 }
   
   .bot-carrito {
@@ -21,6 +22,11 @@
     padding: 10px 80px;
     border: none;
 }
+
+.bot-carrito:hover{
+    color: #fff;
+    background-color: #5A7272;
+ }
 
 .bot-carrito a{
     color: #fff;

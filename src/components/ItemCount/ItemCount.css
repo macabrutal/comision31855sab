@@ -29,10 +29,11 @@
     border-radius: 3px; 
     margin-left: 3px;
     background-color: #719191;
+    border: none;
 }
 
 .bot-agregar:hover{
-   background-color: #3D5051
+   background-color: #5A7272;
 }
 
 .btn-outline-primary{
