@@ -2,8 +2,14 @@ import React from "react";
 import "./Navbar.css";
 import CartWidget from "../CartWidget/CartWidget"
 import { Link } from 'react-router-dom'
+import { useContext } from "react"
+import CartContext from '../../context/CartContext'
 
 const Navbar = () =>{
+
+  //No mostrar carrito si no tengo producto (+ ver línea 39)
+  // const {getQuantity} = useContext(CartContext)
+
     return(
 <nav className="navbar navbar-expand-lg navbar-dark nav">
   <div className="container-fluid">
@@ -29,7 +35,8 @@ const Navbar = () =>{
             <Link to='/category/Objetos' className="nav-link">Objetos</Link>  
             </li>
       </ul>
-      <CartWidget/>
+      {<CartWidget/>}
+      {/* {getQuantity() > 0 && <CartWidget/>} */}
      
       <form className="d-flex">
        

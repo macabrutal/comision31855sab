@@ -32,12 +32,37 @@ return count
 
 }
 
+//$ TOTAL de productos:
+const getTotal = () =>{
+    let total = 0
+    cart.forEach(prod => {
+        const subtotal = prod.precio * prod.quantity 
+        total += subtotal
+    })
+
+    return total
+}
+
+//no mostrar contador de productos si ya seleccioné ese productos:
+const isInCart = (id) => {
+return cart.some(prod => prod.id === id)
+}
+
+//ELIMINAR items de a uno
+const removeItem = (id) => {
+const newProducts = cart.filter(prod => prod.id !== id)
+setCart(newProducts )
+}
+
   return (
       <Context.Provider value={{
           cart, 
           addItem,
           clearCart,
-          getQuantity
+          getQuantity,
+          getTotal,
+          isInCart,
+          removeItem 
       }}>
         {children}
       </Context.Provider>

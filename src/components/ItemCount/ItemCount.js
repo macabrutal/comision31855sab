@@ -4,18 +4,21 @@ import './ItemCount.css';
 import { button  } from 'react-bootstrap'
 
 
-const ItemCount = ({onAdd})=> {
+const ItemCount = ({onAdd, initial = 1})=> {
 //useState
-const [count, setCount] = useState(0)
+const [count, setCount] = useState(initial)
 // const [title, setTitle] = useState('Titulo inicial')
-
-const decrement = () => {
-    setCount(count - 1)
-}
 
 const increment = () => {
     setCount(count + 1)
 }
+
+const decrement = () => {
+    if (count > 1)
+    setCount(count - 1)
+}
+
+
 
     return(
 <div className="contenedor-count">
