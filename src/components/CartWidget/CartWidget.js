@@ -8,10 +8,12 @@
       const { getQuantity } = useContext(CartContext) //función que retorna la cantidad de productos
 
   return(
-    <Link to={'/'} className="CartWidget">
+    <Link to={'/cart'} className="CartWidget">
        <a id="botonCarrito" className='btn btn-carro'>  
           <i class="fas fa-shopping-cart fa-1x"></i></a>
-        { getQuantity() }
+
+          {/* si no hay productos no muestro número: */}
+          { getQuantity() > 0 && getQuantity() } 
     </Link>
 );
 }

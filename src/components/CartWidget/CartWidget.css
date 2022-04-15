@@ -13,14 +13,22 @@
     outline: inherit;
     color: #fff;
 }
+
+/* Carro */
 .CartWidget a{
-    color: #fff;
+    color: #34495e;
 }
 
+.CartWidget a:hover{
+    color: #2c3e50;
+}
+
+/* Número */
 a.CartWidget{
     color: #fff;
 }
 
-.CartWidget a:hover{
-    color: #C4B58D;
+a.CartWidget:hover{
+    color: #D8B616;
 }
+
